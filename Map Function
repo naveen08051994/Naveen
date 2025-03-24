@@ -3,18 +3,16 @@
 ====================================================================================================================================================
 
 def hike(sal):
-    return(sal+sal*50/100)
-     
-#main program 
+    return (sal + sal * 50 / 100)
+# main program
 print("enter the list of elements seperated by space:")
-oldsal=list(map(float,input().split()))
+oldsal = list(map(float, input().split()))
 print("old salary details")
 print(oldsal)
-newsal=list(map(hike,oldsal))
+newsal = list(map(hike, oldsal))
 print(newsal)
-print("*"*50)
+print("*" * 50)
 print("\toldsal\t\tnewsal")
-print("*"*50)
-for os,ns in zip(oldsal,newsal):
-    print("\t{}\t\t{}".format(os,ns))
-    
+print("*" * 50)
+for os, ns in zip(oldsal, newsal):
+    print("\t{}\t\t{}".format(os, ns))
